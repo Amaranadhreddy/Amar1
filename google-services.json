@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "418720959401",
+    "project_id": "apts-tms"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418720959401:android:ce840cf274002189",
+        "android_client_info": {
+          "package_name": "com.tms.apts.aptemples"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418720959401-mhjkbb7g12mvf7j65otm4ogi7ld3bgpq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tms.apts.aptemples",
+            "certificate_hash": "E930320D749343A2F5A14C1DDFF54C7D3957B41A"
+          }
+        },
+        {
+          "client_id": "418720959401-ro29vharbgqpc8n9iufpcr9jhg8351g3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFUSy_dQ_P58TWhxd2I8bJjAWeAuLUHnk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

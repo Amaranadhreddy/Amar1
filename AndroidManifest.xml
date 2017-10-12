@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tms.apts.aptemples">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <permission
+        android:name="com.tms.apts.aptemples.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.apts..permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/tms_app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="55566c8d45c1c67df75d1753770b9f3f09ceefa2" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".slidemenu.nearBy.PlaceDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".otp.ForgotPasswordActivity"
+            android:parentActivityName=".login.LoginActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:screenOrientation="portrait"
+                android:value="com.tms.apts.aptemples.login.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".signup.SignupActivity"
+            android:parentActivityName=".login.LoginActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:screenOrientation="portrait"
+                android:value="com.tms.apts.aptemples.login.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".signup.SocialRegistration"
+            android:parentActivityName=".login.LoginActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:screenOrientation="portrait"
+                android:value="com.tms.apts.aptemples.login.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".otp.OTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".otp.OTPActivityForRegistration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.ListOfTemplesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.TempleFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.WebLinkActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.ContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.HomePageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.OnlineServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".slidemenu.bookingHistory.BookingHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".slidemenu.settings.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".slidemenu.settings.MySettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".slidemenu.notification.NotificationsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".slidemenu.settings.DeactivateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".slidemenu.offerings.MyOfferingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".slidemenu.profile.MyProfileActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".onlineservices.seva.SevaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.seva.SevaSlotsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.seva.SevaSlotBookingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.darsan.DarsanamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.donation.DonationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.donation.DonationPreConfirmationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.hundi.HundiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.hundi.HundiPreConfirmationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.annadanam.AnnadaanamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.annadanam.AnnadaanamPreConfirmationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.pilgrim.ViewPrivilegesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.darsan.DarsanamSlotsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.darsan.DarsanamSlotBookingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.accommodation.AccommodationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.accommodation.AccommodationSlotsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.accommodation.AccommodationSlotBookingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.seva.SevaPreConfirmationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.darsan.DarsanamPreConfirmationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.accommodation.AccommodationPreConfirmationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.cart.MyCartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".slidemenu.rateUs.RateAppActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.pilgrim.PilgrimsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.seva.SevaAddPilgrimsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onlineservices.darsan.DarsanamAddPilgrimsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.ComplaintsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".payment.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".payment.OrderDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".signup.PreSignupActivity" />
+        <activity
+            android:name=".slidemenu.bookingHistory.ViewBookingHistoryActivity"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".slidemenu.nearBy.NearBYPlacesActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_near_byplaces" />
+    </application>
+
+</manifest>
